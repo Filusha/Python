@@ -7,15 +7,12 @@
 vf_start_distance = int(input("Введите дистанцию пройденную в первый день: "))
 vf_finish_distance = int(input("Введите дистанцию которую необходимо достич: "))
 vn_day_cnt = 1
-vf_distance = vf_start_distance
-vn_increase = 10
 
 while True:
-    vf_distance = vf_distance * 1.1
-    print(vf_distance)
+    vf_start_distance *= 1.1
     vn_day_cnt += 1
-    if vf_finish_distance <= vf_distance:
+    if vf_finish_distance <= vf_start_distance:
         break
 
-print("Итоговая дистанция забега %d км будет достигнута за %d дней" % (vf_finish_distance, vn_day_cnt))
+print("На %d день спортсмен достиг результата — не менее %d км." % (vn_day_cnt, vf_finish_distance))
 
