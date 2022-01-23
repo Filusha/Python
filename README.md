@@ -1,2 +1,3 @@
-# Python-Basics
+# Python
 Основы языка Python
+Филипенков Виктор
